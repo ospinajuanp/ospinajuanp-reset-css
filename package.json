@@ -21,6 +21,11 @@
     "url": "https://github.com/ospinajuanp/ospinajuanp-reset-css/issues"
   },
   "homepage": "https://github.com/ospinajuanp/ospinajuanp-reset-css#readme",
-  "bin":{"ospinajuanp-reset-css":"./bin/global.js"},
-  "preferGlobal":true
+  "bin": {
+    "ospinajuanp-reset-css": "./bin/global.js"
+  },
+  "preferGlobal": true,
+  "dependencies": {
+    "sass": "^1.57.1"
+  }
 }
