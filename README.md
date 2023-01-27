@@ -18,6 +18,7 @@ npm install -g ospinajuanp-reset-css
 # Usage
 
 - Import/Link in your project 
+- Example : < link rel="stylesheet" href="./node_modules/ospinajuanp-reset-css/resetStyle.css">
 
 # Contributing
 
