@@ -25,7 +25,7 @@
     "ospinajuanp-reset-css": "./bin/global.js"
   },
   "preferGlobal": true,
-  "dependencies": {
+  "devDependencies": {
     "sass": "^1.57.1"
   }
 }
