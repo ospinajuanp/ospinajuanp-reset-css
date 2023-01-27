@@ -1,6 +1,8 @@
-# ospinajuanp-reset-css+
+# ospinajuanp-reset-css
 
 This project is designed so that any person or organization can use it to help start up projects. 
+
+In this project we are working on resetting the default styles that the browser has, in order to start the project in the best possible way without having to fix possible bugs by default styles added by browsers.
 
 ### What does it do?
 - Reset styles for a wide range of elements.
