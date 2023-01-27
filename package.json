@@ -1,6 +1,6 @@
 {
   "name": "ospinajuanp-reset-css",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "reset,css",
   "main": "In this project we are working on resetting the default styles that the browser has, in order to start the project in the best possible way without having to fix possible bugs by default styles added by browsers.",
   "scripts": {
