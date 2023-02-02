@@ -12,13 +12,16 @@ In this project we are working on resetting the default styles that the browser 
 ## Install
 
 ```npm
-npm install -g ospinajuanp-reset-css
+npm install ospinajuanp-reset-css
+```
+```npm
+ospinajuanp-reset-css
 ```
 
 # Usage
 
 - Import/Link in your project 
-- Example : < link rel="stylesheet" href="./node_modules/ospinajuanp-reset-css/resetStyle.css">
+- Example : < link rel="stylesheet" href="./resetStyle.css">
 
 # Contributing
 

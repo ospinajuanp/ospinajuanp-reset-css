@@ -1,3 +1,3 @@
 #!/usr/bin/env node 
-let information = require('../src/index.js'); 
-information.info();
+let query = require('../src/install.js'); // Variable con información del ejecutable
+query.installPackage(); // Ejecutamos la función que queremos mostrar por la terminal
