@@ -1,5 +1,8 @@
 # Change to ospinajuanp-reset-css
 
+## 1.0.6 (February 3, 2023)
+* update scrip exe move .css and .scss
+
 ## 1.0.5 (February 2, 2023)
 * update build script exe auto install package Implementation
 * update documentation(README.md)
