@@ -12,8 +12,17 @@
   },
   "keywords": [
     "reset",
+    "style",
     "css",
-    "style"
+    "css variable",
+    "sass",
+    "scss",
+    "react",
+    "webpack",
+    "web",
+    "front-end",
+    "preprocessor",
+    "resetStyle"
   ],
   "author": "ospinajuanp <juanpo996@gmail.com>",
   "license": "MIT",
