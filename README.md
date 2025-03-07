@@ -14,39 +14,75 @@ In this project we are working on resetting the default styles that the browser 
 ```npm
 npm install ospinajuanp-reset-css
 ```
+
+Once installed, run the command:
+
 ```npm
 ospinajuanp-reset-css
 ```
+You'll be prompted with the following options:
+
+```
+Where do you want to copy the files? (Press Enter to use 'src'): 
+```
+```
+Do you want to reset styles with CSS or SCSS? (Press Enter to use CSS): 
+```
+```
+✅ File copied: resetStyle.css → src
+
+```
+By default, the reset styles will be copied to the src folder using CSS. You can change these options according to your project structure.
+
 
 # Usage
 
-- Import/Link in your project 
-- Example : < link rel="stylesheet" href="./resetStyle.css">
-- You can modify inside the file in the :root section the values of the --color-primary and --color-secondary variables in order to have a base configuration in your project. 
-## CSS y SASS(scss)
+- without using framework
+  - Link in your project 
+  - Example : < link rel="stylesheet" href="./resetStyle.css">
+- using framework
+  - Import in your project
+  - example: import './src/resetStyle.css'
+
+
+## modify CSS y SASS(scss) 
 ```css
-/* Here we define normal mode*/
-:root { 
+/* Here we define custom properties */
+:root {
   /* Here we define color*/
-  --color-primary:#181818;
-  --color-secondary:#f0f0f0;
+  --color-primary: #007bff;
+  --color-secondary: #f8f9fa;
+  --color-tertiary: #dee2e6;
+  --color-accent: #17a2b8;
+  --color-text: #212529;
+  --color-background: #ffffff;
   /* Here we define typography*/
   --typography-primary: Helvetica,arial,sans-serif;
   --typography-secondary: Verdana;
 }
+
 /* Here we define dark mode*/
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-primary:#f0f0f0;
-    --color-secondary:#181818;
+    --color-primary: #0d6efd;
+    --color-secondary: #343a40;
+    --color-tertiary: #495057;
+    --color-accent: #ffb400;
+    --color-text: #e9ecef;
+    --color-background: #212529;
+  
   }
 }
 /* Optional */
 /* Here we define Contrast High */
 @media (prefers-contrast: high) {
   :root {
-    --color-primary:#000;
-    --color-secondary:#fff;
+    --color-primary: #ffcc00;
+    --color-secondary: #000000;
+    --color-tertiary: #ffffff;
+    --color-accent: #ff0000;
+    --color-text: #ffffff;
+    --color-background: #000000;  
   }
 }
 ```
@@ -59,16 +95,3 @@ If someone wants to add or improve something, I invite you to collaborate direct
 # License
 
 funny-commit is released under the [MIT License](https://opensource.org/licenses/MIT)
-
-
-
-# Gratitude to
-I want to offer my sincere thanks to Eduardo Fierro(@eduardofierropro) because through his videos and streams I have acquired the knowledge to carry out this project. I share his social networks to follow his work and contributions to the community.
-- Twitch: https://twitch.tv/eduardofierropro
-- Youtube! https://www.youtube.com/EduardoFierro...
-- TikTok https://www.tiktok.com/@eduardofierro...
-- Podcast about web development https://anchor.fm/eduardofierropro
-- Instagram https://www.instagram.com/eduardofier...
-- Github https://github.com/eduardofierropro
-- Twitter https://twitter.com/i/lists/132582779...
-- His web https://eduardofierro.pro

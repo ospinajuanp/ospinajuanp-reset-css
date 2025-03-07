@@ -1,5 +1,11 @@
 # Change to ospinajuanp-reset-css
 
+## 1.1.0 (March 6, 2025)
+* Refactored for better structure: The logic for copying files is now modular and separated into a function.
+* Default selections: If the user presses Enter, the script defaults to src as the destination and CSS as the file type.
+* Improved validations: Ensures that paths and files exist before executing any operations.
+* Clearer messaging: Provides better feedback for errors and successful actions.
+
 ## 1.0.7 (February 8, 2023)
 * update documentation(README.md)
 
