@@ -14,7 +14,7 @@ const rl = readline.createInterface({
  * @param {string} destination - Carpeta de destino / Destination folder.
  */
 function copyFile(fileName, destination) {
-    const filePath = `node_modules/ospinajuanp-reset-css/${fileName}`;
+    const filePath = `node_modules/ospinajuanp-reset-css/bin/${fileName}`;
 
     if (!fs.existsSync(filePath)) {
         console.error(`⚠️ The file ${fileName} does not exist.`);
