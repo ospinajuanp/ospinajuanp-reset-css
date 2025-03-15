@@ -1,0 +1,95 @@
+/* RESET DE ESTILOS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    height: 100%;
+  }
+  
+  /* TEMA PASTEL MINIMALISTA */
+  body {
+    background-color: #fdf6e3;
+    color: #657b83;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    padding: 1rem;
+  }
+  
+  /* Enlaces */
+  a {
+    color: #268bd2;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Encabezados */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: #586e75;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Botones */
+  button {
+    background-color: #2aa198;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: #fdf6e3;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background 0.3s;
+  }
+  
+  button:hover {
+    background-color: #279e8c;
+  }
+  
+  /* Formularios: entradas y áreas de texto */
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    border: 1px solid #93a1a1;
+    padding: 0.5rem;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #fff;
+    color: #657b83;
+  }
+  
+  /* Navegación */
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Tarjetas o contenedores */
+  .card {
+    background-color: #fff;
+    border: 1px solid #eee8d5;
+    padding: 1rem;
+    margin: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  }
+  
+  /* Tablas */
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 1rem;
+  }
+  
+  table th,
+  table td {
+    border: 1px solid #eee8d5;
+    padding: 0.5rem;
+    text-align: left;
+  }
+  

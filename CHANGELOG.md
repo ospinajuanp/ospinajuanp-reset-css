@@ -1,5 +1,11 @@
 # Change to ospinajuanp-reset-css
 
+## 1.1.1 (March 14, 2025)
+* Added 3 new styles to the simple reset, now offering a choice among 4 templates: 1. simple, 2. modeDark, 3. modePastel, 4. modeRetro.
+* Removed the CSS vs SCSS option; only CSS is now supported.
+* Added a CLI prompt to ask for the template selection.
+* Removed the CLI prompt for choosing the file type (CSS or SCSS).
+
 ## 1.1.0 (March 6, 2025)
 * Refactored for better structure: The logic for copying files is now modular and separated into a function.
 * Default selections: If the user presses Enter, the script defaults to src as the destination and CSS as the file type.

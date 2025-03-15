@@ -44,8 +44,15 @@ rl.question("Where do you want to copy the files? (Press Enter to use 'src'): ",
     }
 
     // Pregunta el tipo de archivo / Ask for the file type
-    rl.question("Do you want to reset styles with CSS or SCSS? (Press Enter to use CSS): ", (fileType) => {
-        const fileName = fileType.trim().toLowerCase() === "scss" ? "resetStyle.scss" : "resetStyle.css";
-        copyFile(fileName, destination);
-    });
+    // rl.question("Do you want to reset styles with CSS or SCSS? (Press Enter to use CSS): ", (Type) => {
+    //     const TypeFile = Type.trim().toLowerCase() === "scss" ? "scss" : "css";
+        
+        // Pregunta el tipo de style para el archivo / Ask the type of style for the file
+        rl.question("Do you want to reset styles 1(simple) or 2(dark) or 3(pastel) or 4(retro)? (Press Enter to use the default template: simple): ", (fileType) => {
+            const type = fileType.trim().toLowerCase()
+            const fileName = type === "1" ? "resetStyle.css" : type === "2" ? "resetStyleDark.css" : type === "3" ? "resetStylePastel.css" : type === "4" ? "resetStyleRetro.css" : "resetStyle.css";
+            
+            copyFile(fileName, destination);
+        });
+    // });
 });

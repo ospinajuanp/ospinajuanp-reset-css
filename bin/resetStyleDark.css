@@ -1,0 +1,94 @@
+/* RESET DE ESTILOS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    height: 100%;
+  }
+  
+  /* TEMA MODERNO OSCURO */
+  body {
+    background-color: #121212;
+    color: #e0e0e0;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    padding: 1rem;
+  }
+  
+  /* Enlaces */
+  a {
+    color: #bb86fc;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Encabezados */
+  h1, h2, h3, h4, h5, h6 {
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Botones */
+  button {
+    background-color: #bb86fc;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-family: 'Roboto', sans-serif;
+    color: #121212;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background 0.3s;
+  }
+  
+  button:hover {
+    background-color: #9a67ea;
+  }
+  
+  /* Formularios: entradas y áreas de texto */
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+    padding: 0.5rem;
+    color: #e0e0e0;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  /* Navegación */
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  /* Tarjetas o contenedores */
+  .card {
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+    padding: 1rem;
+    margin: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+  }
+  
+  /* Tablas */
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 1rem;
+  }
+  
+  table th,
+  table td {
+    border: 1px solid #333;
+    padding: 0.5rem;
+    text-align: left;
+  }
+  
