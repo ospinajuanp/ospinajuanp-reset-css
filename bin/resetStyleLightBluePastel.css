@@ -1,0 +1,148 @@
+/* =========================================================
+   PALETA PASTEL – AZUL OSCURO COMO COLOR PRINCIPAL
+   ========================================================= */
+:root {
+  /* Tonos base */
+  --clr-bg:            #0f172a;   /* fondo general (azul-gris muy oscuro) */
+  --clr-card-bg:       #1e293b;   /* tarjetas / contenedores */
+  --clr-text:          #e2e8f0;   /* texto principal (gris muy claro azulado) */
+
+  /* Color primario (azul oscuro pastel) */
+  --clr-primary:       #4a6cf7;   /* azul oscuro pero suave */
+  --clr-primary-dark:  #3857d6;   /* bordes / énfasis */
+  --clr-primary-light: #c2d0ff;   /* hovers, backgrounds suaves */
+
+  /* Acentos pastel */
+  --clr-accent:        #ffd6e8;   /* rosa pastel para contrastar */
+  --clr-accent-light:  #ffeff9;   /* hover / foco */
+
+  /* Otros */
+  --clr-input-bg:      #293040;
+  --clr-shadow:        rgba(74, 108, 247, 0.55); /* sombra azulada */
+}
+
+
+/* =========================================================
+   RESET
+   ========================================================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+/* =========================================================
+   ESTILO FUTURISTA – BASE OSCURA + PASTELES
+   ========================================================= */
+body {
+  background: var(--clr-bg);
+  color: var(--clr-text);
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  padding: 1rem;
+}
+
+/* Enlaces */
+a {
+  color: var(--clr-primary);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: var(--clr-accent);
+  text-decoration: underline;
+}
+
+/* Encabezados */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Arial', sans-serif;
+  color: var(--clr-primary);
+  text-shadow: 0 0 10px var(--clr-shadow);
+  margin-bottom: 0.5rem;
+}
+
+/* Botones */
+button {
+  background: var(--clr-primary);
+  border: none;
+  padding: 0.5rem 1rem;
+  font-family: 'Arial', sans-serif;
+  color: var(--clr-bg);
+  cursor: pointer;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: background 0.3s, transform 0.3s;
+}
+
+button:hover {
+  background: var(--clr-accent);
+  transform: scale(1.05);
+}
+
+/* Formularios */
+input[type='text'],
+input[type='email'],
+textarea {
+  background: var(--clr-input-bg);
+  border: 1px solid var(--clr-primary-dark);
+  padding: 0.5rem;
+  color: var(--clr-text);
+  font-family: 'Arial', sans-serif;
+  border-radius: 4px;
+}
+
+/* Navegación */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Tarjetas / contenedores */
+.card {
+  background: var(--clr-card-bg);
+  border: 1px solid var(--clr-primary-dark);
+  padding: 1rem;
+  margin: 1rem 0;
+  box-shadow: 0 0 15px var(--clr-shadow);
+  border-radius: 6px;
+}
+
+/* Tablas */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+table th,
+table td {
+  border: 1px solid var(--clr-primary-dark);
+  padding: 0.5rem;
+  text-align: left;
+  color: var(--clr-text);
+}
+
+/* Sombra de texto pastel futurista */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  text-shadow: 0 0 10px var(--clr-accent-light);
+}

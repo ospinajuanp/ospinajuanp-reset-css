@@ -41,7 +41,9 @@ Do you want to reset styles
 1 (simple) 
 2 (dark)
 3 (pastel)
-4 (retro)
+4 (DarkBluePastel)
+5 (LightBluePastel)
+6 (retro)
 (Press Enter to use the default template: simple)
 ```
 

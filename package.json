@@ -1,6 +1,6 @@
 {
   "name": "ospinajuanp-reset-css",
-  "version": "1.1.2",
+  "version": "1.1.3",
   "description": "reset,css",
   "main": "In this project we are working on resetting the default styles that the browser has, in order to start the project in the best possible way without having to fix possible bugs by default styles added by browsers.",
   "scripts": {
@@ -34,6 +34,6 @@
   },
   "preferGlobal": true,
   "devDependencies": {
-    "sass": "^1.57.1"
+    "sass": "^1.93.2"
   }
 }

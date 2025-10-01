@@ -48,9 +48,9 @@ rl.question("Where do you want to copy the files? (Press Enter to use 'src'): ",
     //     const TypeFile = Type.trim().toLowerCase() === "scss" ? "scss" : "css";
         
         // Pregunta el tipo de style para el archivo / Ask the type of style for the file
-        rl.question("Do you want to reset styles 1(simple) or 2(dark) or 3(pastel) or 4(retro)? (Press Enter to use the default template: simple): ", (fileType) => {
+        rl.question("Do you want to reset styles 1(simple) or 2(dark) or 3(pastel) or 4(darkBluePastel) or 5(LightBluePastel) or 6(retro)? (Press Enter to use the default template: simple): ", (fileType) => {
             const type = fileType.trim().toLowerCase()
-            const fileName = type === "1" ? "resetStyle.css" : type === "2" ? "resetStyleDark.css" : type === "3" ? "resetStylePastel.css" : type === "4" ? "resetStyleRetro.css" : "resetStyle.css";
+            const fileName = type === "1" ? "resetStyle.css" : type === "2" ? "resetStyleDark.css" : type === "3" ? "resetStylePastel.css" : type === "4" ? "resetStyleDarkBluePastel.css" : type === "5" ? "resetStyleLightBluePastel.css" : type === "6" ? "resetStyleRetro.css" : "resetStyle.css";
             
             copyFile(fileName, destination);
         });

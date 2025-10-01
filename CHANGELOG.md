@@ -1,5 +1,8 @@
 # Change to ospinajuanp-reset-css
 
+## 1.1.3 (October 1, 2025)
+* Added 2 new styles to the simple reset.
+
 ## 1.1.2 (March 14, 2025)
 * Added 3 new styles to the simple reset, now offering a choice among 4 templates: 1. simple, 2. modeDark, 3. modePastel, 4. modeRetro.
 * Removed the CSS vs SCSS option; only CSS is now supported.
