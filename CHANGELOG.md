@@ -1,6 +1,6 @@
 # Change to ospinajuanp-reset-css
 
-## 1.1.3 (October 1, 2025)
+## 1.1.4 (October 1, 2025)
 * Added 2 new styles to the simple reset.
 
 ## 1.1.2 (March 14, 2025)
