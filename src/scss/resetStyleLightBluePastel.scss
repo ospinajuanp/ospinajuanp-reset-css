@@ -1,0 +1,13 @@
+@use "variables";
+@use "base";
+@use "themes";
+
+:root {
+  // Light Blue Pastel
+  --color-primary: #8ab6d6;
+  --color-secondary: #b3cde0;
+  --color-tertiary: #d4e4ec;
+  --color-accent: #ffdfba;
+  --color-text: #2c3e50;
+  --color-background: #f0f8ff;
+}

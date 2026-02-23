@@ -1,0 +1,13 @@
+@use "variables";
+@use "base";
+@use "themes";
+
+:root {
+  // Dark Blue Pastel
+  --color-primary: #2b3a4a;
+  --color-secondary: #3e5063;
+  --color-tertiary: #52677c;
+  --color-accent: #ffb6b9;
+  --color-text: #e8ecef;
+  --color-background: #1a222c;
+}

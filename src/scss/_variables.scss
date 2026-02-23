@@ -1,0 +1,26 @@
+// _variables.scss
+// ---------------------------------------------------------
+// Default variables & theme configurations
+
+:root {
+  // --- Simple (Default) Theme ---
+  --color-primary: #007bff;
+  --color-secondary: #f8f9fa;
+  --color-tertiary: #dee2e6;
+  --color-accent: #17a2b8;
+  --color-text: #212529;
+  --color-background: #ffffff;
+
+  // --- Typography ---
+  --typography-primary: Helvetica, Arial, sans-serif;
+  --typography-secondary: Verdana, sans-serif;
+}
+
+// Disable animations if user prefers reduced motion
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}

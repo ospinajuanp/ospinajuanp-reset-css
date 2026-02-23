@@ -1,31 +1,27 @@
-# Change to ospinajuanp-reset-css
+# Changelog
 
-## 1.1.4 (October 1, 2025)
-* Added 2 new styles to the simple reset.
+All notable changes to this project will be documented in this file.
 
-## 1.1.2 (March 14, 2025)
-* Added 3 new styles to the simple reset, now offering a choice among 4 templates: 1. simple, 2. modeDark, 3. modePastel, 4. modeRetro.
-* Removed the CSS vs SCSS option; only CSS is now supported.
-* Added a CLI prompt to ask for the template selection.
-* Removed the CLI prompt for choosing the file type (CSS or SCSS).
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## 1.1.0 (March 6, 2025)
-* Refactored for better structure: The logic for copying files is now modular and separated into a function.
-* Default selections: If the user presses Enter, the script defaults to src as the destination and CSS as the file type.
-* Improved validations: Ensures that paths and files exist before executing any operations.
-* Clearer messaging: Provides better feedback for errors and successful actions.
+## [Unreleased]
 
-## 1.0.7 (February 8, 2023)
-* update documentation(README.md)
+### Added
+- Created an SCSS architecture for better code maintainability and generation of CSS reset themes (`src/scss/`).
+- Added a `build` script to automatically compile SCSS files into the `dist/` folder.
+- Configured a cross-platform CLI installation script in Node.js instead of shell scripts.
 
-## 1.0.6 (February 3, 2023)
-* update scrip exe move .css and .scss
+### Changed
+- The reset default behaviors are now updated to modern standards.
+- Refactored `global.js` and removed `src/install.js`. The CLI tool now copies from `dist/` rather than `bin/` and uses `fs` natively.
+- Cleaned up the `package.json` file for better npm registry visibility.
+- Revamped `README.md` to include visual aids, badges, and better instructions.
 
-## 1.0.5 (February 2, 2023)
-* update build script exe auto install package Implementation
-* update documentation(README.md)
+### Security
+- Updated `devDependencies` (specifically `sass`) resolving vulnerabilities reported by `npm audit`.
 
-## 1.0.4 (January 28, 2023)
-
-* Fix of the tracking to node_modules
-* Adding CHANGELOG.md file
+## [1.1.4] - 2024-xx-xx
+### Added
+- Initial project structure containing styles for default, dark, pastel, darkBluePastel, lightBluePastel, and retro.
+- Interactive CLI prompt for selecting default themes via `exec` copy command.

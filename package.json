@@ -1,10 +1,18 @@
 {
   "name": "ospinajuanp-reset-css",
   "version": "1.1.4",
-  "description": "reset,css",
-  "main": "In this project we are working on resetting the default styles that the browser has, in order to start the project in the best possible way without having to fix possible bugs by default styles added by browsers.",
+  "description": "A modern, modular CSS reset tool with multiple themes (Dark, Pastel, Retro, etc) ready for any web project.",
+  "main": "dist/resetStyle.css",
+  "files": [
+    "dist",
+    "bin",
+    "src/scss",
+    "build.js"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node ./build.js",
+    "prepublishOnly": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -12,16 +20,20 @@
   },
   "keywords": [
     "reset",
+    "css-reset",
     "style",
     "css",
-    "css variable",
+    "css variables",
     "sass",
     "scss",
     "react",
+    "modern-normalize",
     "web",
     "front-end",
     "preprocessor",
-    "resetStyle"
+    "resetStyle",
+    "dark mode",
+    "themes"
   ],
   "author": "ospinajuanp <juanpo996@gmail.com>",
   "license": "MIT",
@@ -33,7 +45,8 @@
     "ospinajuanp-reset-css": "./bin/global.js"
   },
   "preferGlobal": true,
+  "dependencies": {},
   "devDependencies": {
-    "sass": "^1.93.2"
+    "sass": "^1.85.1"
   }
 }

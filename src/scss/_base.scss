@@ -1,0 +1,81 @@
+// _base.scss
+// ---------------------------------------------------------
+// Modern CSS Reset
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%; // Prevent font scaling in landscape
+}
+
+body {
+  min-height: 100vh;
+  font-family: var(--typography-primary);
+  color: var(--color-text);
+  background-color: var(--color-background);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// Media elements
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+// Typography resets
+input, button, textarea, select {
+  font: inherit;
+  background-color: transparent;
+  color: inherit;
+  border: none;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+// Form elements
+button {
+  cursor: pointer;
+}
+
+// Remove tap highlight on mobile
+a, button, input, select, textarea {
+  -webkit-tap-highlight-color: transparent;
+}
+
+// Scrollbar styling
+::-webkit-scrollbar {
+  width: 0.8rem;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: #888;
+  
+  &:hover {
+    background-color: #555;
+  }
+}
+
+::selection {
+  background-color: var(--color-text);
+  color: var(--color-background);
+}

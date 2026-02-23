@@ -1,0 +1,78 @@
+// _themes.scss
+// ---------------------------------------------------------
+// Additional theme definitions (Dark, Pastel, Retro, etc.)
+
+// --- Dark Theme ---
+@mixin theme-dark {
+  --color-primary: #0d6efd;
+  --color-secondary: #343a40;
+  --color-tertiary: #495057;
+  --color-accent: #ffb400;
+  --color-text: #e9ecef;
+  --color-background: #212529;
+}
+
+// Auto-apply dark mode using media queries if compiling the base themes
+@media (prefers-color-scheme: dark) {
+  :root[data-theme="auto"], :root:not([data-theme]) {
+    @include theme-dark;
+  }
+}
+
+// High Contrast Mode
+@media (prefers-contrast: high) {
+  :root {
+    --color-primary: #ffcc00 !important;
+    --color-secondary: #000000 !important;
+    --color-tertiary: #ffffff !important;
+    --color-accent: #ff0000 !important;
+    --color-text: #ffffff !important;
+    --color-background: #000000 !important;  
+  }
+}
+
+// Explicit Root assignments for separate CSS outputs
+:root[data-theme="dark"] {
+  @include theme-dark;
+}
+
+// --- Pastel Theme ---
+:root[data-theme="pastel"] {
+  --color-primary: #ffb3ba;
+  --color-secondary: #ffdfba;
+  --color-tertiary: #ffffba;
+  --color-accent: #baffc9;
+  --color-text: #5e5e5e;
+  --color-background: #fffafa;
+}
+
+// --- Dark Blue Pastel ---
+:root[data-theme="darkBluePastel"] {
+  --color-primary: #2b3a4a;
+  --color-secondary: #3e5063;
+  --color-tertiary: #52677c;
+  --color-accent: #ffb6b9;
+  --color-text: #e8ecef;
+  --color-background: #1a222c;
+}
+
+// --- Light Blue Pastel ---
+:root[data-theme="lightBluePastel"] {
+  --color-primary: #8ab6d6;
+  --color-secondary: #b3cde0;
+  --color-tertiary: #d4e4ec;
+  --color-accent: #ffdfba;
+  --color-text: #2c3e50;
+  --color-background: #f0f8ff;
+}
+
+// --- Retro Theme ---
+:root[data-theme="retro"] {
+  --color-primary: #d9534f;
+  --color-secondary: #f0ad4e;
+  --color-tertiary: #5cb85c;
+  --color-accent: #5bc0de;
+  --color-text: #3e3e3e;
+  --color-background: #fdf6e3;
+  --typography-primary: "Courier New", Courier, monospace;
+}

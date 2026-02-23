@@ -1,114 +1,118 @@
-# ospinajuanp-reset-css
+# Ospinajuanp Reset CSS
 
-ospinajuanp-reset-css is a lightweight tool designed to help kickstart your web projects by resetting browser default styles. It provides a consistent baseline for styling by eliminating common browser inconsistencies, so you can focus on designing your application without unexpected default behaviors.
+[![npm version](https://img.shields.io/npm/v/ospinajuanp-reset-css.svg)](https://www.npmjs.com/package/ospinajuanp-reset-css)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+**Ospinajuanp-reset-css** is a lightweight, modern tool designed to help kickstart your web projects by resetting browser default styles. It provides a consistent baseline for styling by eliminating common browser inconsistencies, so you can focus on designing your application without unexpected layout behaviors.
+
+This project is built with SCSS modularity, providing the highest industry standards for an unintrusive CSS reset, inspired by modern reset techniques.
 
 ## Features
 
-- **Universal Reset:** Resets styles for a wide range of HTML elements.
-- **Browser Bug Fixes:** Addresses common browser inconsistencies and bugs.
-- **Enhanced Usability:** Provides subtle improvements to usability right out of the box.
-- **Template Options:** Offers four preset templates:
-  1. **simple:** A basic reset.
-  2. **modeDark:** A dark theme reset.
-  3. **modePastel:** A pastel-inspired reset.
-  4. **modeRetro:** A retro-themed reset.
+- **Universal Reset:** Resets margins, paddings, and styles for a wide range of HTML elements.
+- **Modern Baseline:** Incorporates features from modern-normalize and modern reset methodologies.
+- **Fully Cross-Platform:** CLI tool uses native Node.js instead of shell commands, supporting Windows, macOS, and Linux out-of-the-box.
+- **Template Options:** Offers six preset templates with predefined design variables:
+  1. **Simple** (Default Baseline)
+  2. **Dark Mode**
+  3. **Pastel**
+  4. **Dark Blue Pastel**
+  5. **Light Blue Pastel**
+  6. **Retro**
+- **SCSS Source Ready:** Contains its raw `.scss` source for those who want to compile it independently.
 
 ## Installation
 
-Install the package via npm:
+Install the package as a development dependency via npm, yarn, or pnpm:
 
 ```bash
-npm install ospinajuanp-reset-css
+npm install -D ospinajuanp-reset-css
 ```
-## Getting Started
-Once installed, run the tool using the following command:
+
+## Getting Started (CLI Tool)
+
+Once installed, there's a quick interactive CLI tool that will copy the right reset file directly into your source folder.
+
+Simply run:
 ```bash
-ospinajuanp-reset-css
+npx ospinajuanp-reset-css
 ```
 
-You will be guided through a simple CLI process:
+You will be guided through a simple interactive process:
 
-Destination Folder Prompt:
+1. **Destination Folder Prompt:**
+   ```
+   Where do you want to copy the reset file? (Press Enter to use 'src'):
+   ```
 
-```bash
-Where do you want to copy the files? (Press Enter to use 'src'):
-```
+2. **Template Selection Prompt:**
+   ```
+   Available Templates:
+   1 - Simple (Default)
+   2 - Dark
+   3 - Pastel
+   4 - Dark Blue Pastel
+   5 - Light Blue Pastel
+   6 - Retro
 
-Template Selection Prompt:
+   Which template do you want to use? (Press Enter for 1 - Simple):
+   ```
 
-```bash
-Do you want to reset styles 
-1 (simple) 
-2 (dark)
-3 (pastel)
-4 (DarkBluePastel)
-5 (LightBluePastel)
-6 (retro)
-(Press Enter to use the default template: simple)
-```
+The script will automatically copy the requested template file to the destination folder you chose (e.g., `src/resetStyle.css`).
 
-After your selections, the script copies the appropriate reset file (e.g., resetStyle.css) to the specified destination folder (default is src).
+## Manual Usage
 
-Note: The option to choose between CSS and SCSS has been removed; only CSS is supported.
-
-# Usage
 ### Without a Framework
-Simply include the reset stylesheet in your HTML file:
-```bash
-<link rel="stylesheet" href="./resetStyleMODE.css">
+If you copied the generated file manually via the CLI, simply include the reset stylesheet in your HTML file:
+```html
+<link rel="stylesheet" href="./src/resetStyle.css">
 ```
 
-### With a Framework
-Import the reset stylesheet directly into your project. For example, in a JavaScript or TypeScript file:
-```bash
+### With a JavaScript Framework (React, Vue, Next.js, Vite)
+Import the reset stylesheet directly into your project's main layout or index file. 
+```javascript
+// index.js or layout.jsx
 import './src/resetStyle.css';
 ```
+*(Optionally you can import directly from the package without copying: `import 'ospinajuanp-reset-css/dist/resetStyle.css';`)*
 
+## Customizing the Styles
 
-# Customizing the Styles simple
+Our templates inject generic CSS custom variables at the `:root` level. You can further modify the reset or extend it.
 
-You can further modify the reset or extend it by adding custom CSS variables and media queries. For instance:
-
-```bash
-/* Custom properties for colors and typography */
+For instance, if choosing the `Simple` template:
+```css
+/* You can override these variables anywhere in your app */
 :root {
   --color-primary: #007bff;
   --color-secondary: #f8f9fa;
-  --color-tertiary: #dee2e6;
-  --color-accent: #17a2b8;
   --color-text: #212529;
   --color-background: #ffffff;
-  --typography-primary: Helvetica, arial, sans-serif;
-  --typography-secondary: Verdana, sans-serif;
+  --typography-primary: Helvetica, Arial, sans-serif;
 }
 
-/* Dark mode adjustments */
+/* Add your Dark Mode Overrides */
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-primary: #0d6efd;
-    --color-secondary: #343a40;
-    --color-tertiary: #495057;
-    --color-accent: #ffb400;
-    --color-text: #e9ecef;
     --color-background: #212529;
-  }
-}
-
-/* High contrast mode (optional) */
-@media (prefers-contrast: high) {
-  :root {
-    --color-primary: #ffcc00;
-    --color-secondary: #000000;
-    --color-tertiary: #ffffff;
-    --color-accent: #ff0000;
-    --color-text: #ffffff;
-    --color-background: #000000;
+    --color-text: #e9ecef;
   }
 }
 ```
 
-# Contributing
-Contributions are welcome! If you’d like to enhance the functionality or improve the code, please feel free to submit pull requests or open issues. Join the conversation on GitHub.
+## Developing and Compiling Sources locally
 
-# License
-ospinajuanp-reset-css is released under the [MIT License](https://opensource.org/licenses/MIT)
+If you want to contribute to the SCSS reset styles, clone the repository and run:
+
+```bash
+npm install
+npm run build
+```
+
+This will automatically trigger `node build.js` to compile the variables and base resets from `src/scss/` into `dist/*.css`.
+
+## Contributing
+Contributions are always welcome! If you’d like to enhance the functionality, improve the code, or add new themes, feel free to submit pull requests or open issues at our [GitHub Repository](https://github.com/ospinajuanp/ospinajuanp-reset-css).
+
+## License
+`ospinajuanp-reset-css` is released under the [MIT License](https://opensource.org/licenses/MIT).

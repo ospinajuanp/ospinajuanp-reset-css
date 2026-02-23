@@ -1,0 +1,13 @@
+@use "variables";
+@use "base";
+@use "themes";
+
+:root {
+  // Pastel Theme
+  --color-primary: #ffb3ba;
+  --color-secondary: #ffdfba;
+  --color-tertiary: #ffffba;
+  --color-accent: #baffc9;
+  --color-text: #5e5e5e;
+  --color-background: #fffafa;
+}
