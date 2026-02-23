@@ -1,6 +1,6 @@
 {
   "name": "ospinajuanp-reset-css",
-  "version": "1.1.5",
+  "version": "2.0.0",
   "description": "A modern, modular CSS reset tool with multiple themes (Dark, Pastel, Retro, etc) ready for any web project.",
   "main": "dist/resetStyle.css",
   "files": [
@@ -42,7 +42,7 @@
   },
   "homepage": "https://github.com/ospinajuanp/ospinajuanp-reset-css#readme",
   "bin": {
-    "ospinajuanp-reset-css": "./bin/global.js"
+    "ospinajuanp-reset-css": "bin/global.js"
   },
   "preferGlobal": true,
   "dependencies": {},
