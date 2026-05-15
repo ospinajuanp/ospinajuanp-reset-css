@@ -105,6 +105,31 @@ Or use the dist path directly:
 import 'ospinajuanp-reset-css/dist/resetStyleDark.css';
 ```
 
+### Dynamic Theme Switching (JavaScript API)
+
+Use the JS API to change themes dynamically at runtime:
+
+```javascript
+import { setTheme, getTheme, themes, initTheme } from 'ospinajuanp-reset-css/api';
+
+// Initialize with a specific theme
+initTheme('dark');
+
+// Or set theme later
+setTheme('pastel');
+
+// Get current theme
+console.log(getTheme()); // 'pastel'
+
+// Available themes
+console.log(themes); // ['simple', 'dark', 'pastel', 'darkBluePastel', 'lightBluePastel', 'retro']
+```
+
+This is useful for:
+- User theme preference toggles
+- Theme switchers in settings
+- Dynamic theme loading based on user preference
+
 ## Customizing the Styles
 
 Our templates inject generic CSS custom variables at the `:root` level. You can further modify the reset or extend it.

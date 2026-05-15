@@ -17,12 +17,14 @@
     "./dist/resetStylePastel.css": "./dist/resetStylePastel.css",
     "./dist/resetStyleDarkBluePastel.css": "./dist/resetStyleDarkBluePastel.css",
     "./dist/resetStyleLightBluePastel.css": "./dist/resetStyleLightBluePastel.css",
-    "./dist/resetStyleRetro.css": "./dist/resetStyleRetro.css"
+    "./dist/resetStyleRetro.css": "./dist/resetStyleRetro.css",
+    "./api": "./src/index.js"
   },
   "files": [
     "dist",
     "bin",
     "src/scss",
+    "src/index.js",
     "build.js"
   ],
   "scripts": {
