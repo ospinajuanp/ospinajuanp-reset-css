@@ -176,6 +176,19 @@ export default function App() {
 }
 ```
 
+### Tree-shaking and Dynamic Imports
+
+Webpack, Vite, and Next.js can automatically tree-shake unused CSS. Use dynamic imports to load only the theme you need:
+
+```javascript
+// Dynamic import - only loads the theme CSS used
+const { loadTheme, themes } = await import('ospinajuanp-reset-css/themes');
+
+await loadTheme('dark'); // Loads only resetStyleDark.css
+```
+
+This approach ensures that only the CSS for the selected theme is bundled, reducing your final bundle size.
+
 ## Customizing the Styles
 
 Our templates inject generic CSS custom variables at the `:root` level. You can further modify the reset or extend it.
