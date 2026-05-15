@@ -130,6 +130,52 @@ This is useful for:
 - Theme switchers in settings
 - Dynamic theme loading based on user preference
 
+### React / Next.js Integration
+
+Use the React hooks and provider for dynamic theme switching in your React apps:
+
+```jsx
+// Using the hook directly
+import { useResetTheme } from 'ospinajuanp-reset-css/react';
+
+function App() {
+  const { theme, setTheme, themes } = useResetTheme('dark');
+
+  return (
+    <div>
+      <p>Current theme: {theme}</p>
+      <select value={theme} onChange={(e) => setTheme(e.target.value)}>
+        {themes.map(t => <option key={t} value={t}>{t}</option>)}
+      </select>
+    </div>
+  );
+}
+```
+
+Or use the ThemeProvider for app-wide theme management:
+
+```jsx
+// Using ThemeProvider
+import { ThemeProvider, useTheme } from 'ospinajuanp-reset-css/react';
+
+function ThemeSwitcher() {
+  const { theme, setTheme, themes } = useTheme();
+  return (
+    <select value={theme} onChange={(e) => setTheme(e.target.value)}>
+      {themes.map(t => <option key={t} value={t}>{t}</option>)}
+    </select>
+  );
+}
+
+export default function App() {
+  return (
+    <ThemeProvider defaultTheme="dark">
+      <ThemeSwitcher />
+    </ThemeProvider>
+  );
+}
+```
+
 ## Customizing the Styles
 
 Our templates inject generic CSS custom variables at the `:root` level. You can further modify the reset or extend it.

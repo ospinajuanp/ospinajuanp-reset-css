@@ -19,13 +19,15 @@
     "./dist/resetStyleDarkBluePastel.css": "./dist/resetStyleDarkBluePastel.css",
     "./dist/resetStyleLightBluePastel.css": "./dist/resetStyleLightBluePastel.css",
     "./dist/resetStyleRetro.css": "./dist/resetStyleRetro.css",
-    "./api": "./src/index.js"
+    "./api": "./src/index.js",
+    "./react": "./src/react/index.js"
   },
   "files": [
     "dist",
     "bin",
     "src/scss",
     "src/index.js",
+    "src/react",
     "index.d.ts",
     "build.js"
   ],
