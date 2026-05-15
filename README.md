@@ -69,12 +69,41 @@ If you copied the generated file manually via the CLI, simply include the reset 
 ```
 
 ### With a JavaScript Framework (React, Vue, Next.js, Vite)
-Import the reset stylesheet directly into your project's main layout or index file. 
+Import the reset stylesheet directly into your project's main layout or index file.
 ```javascript
 // index.js or layout.jsx
 import './src/resetStyle.css';
 ```
 *(Optionally you can import directly from the package without copying: `import 'ospinajuanp-reset-css/dist/resetStyle.css';`)*
+
+### Using Specific Themes
+
+Import any theme directly from the package using the new exports:
+
+```javascript
+// Simple (Default)
+import 'ospinajuanp-reset-css';
+
+// Dark Theme
+import 'ospinajuanp-reset-css/dark';
+
+// Pastel Theme
+import 'ospinajuanp-reset-css/pastel';
+
+// Dark Blue Pastel
+import 'ospinajuanp-reset-css/dark-blue-pastel';
+
+// Light Blue Pastel
+import 'ospinajuanp-reset-css/light-blue-pastel';
+
+// Retro Theme
+import 'ospinajuanp-reset-css/retro';
+```
+
+Or use the dist path directly:
+```javascript
+import 'ospinajuanp-reset-css/dist/resetStyleDark.css';
+```
 
 ## Customizing the Styles
 
