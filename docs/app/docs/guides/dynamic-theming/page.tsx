@@ -1,4 +1,10 @@
 import { CodeBlock } from '@/components/Docs/CodeBlock'
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Dynamic Theming',
+  description: 'Implement dynamic theme switching with user preference support. Toggle between themes at runtime in your React or JS app.',
+}
 
 export default function DynamicThemingPage() {
   return (

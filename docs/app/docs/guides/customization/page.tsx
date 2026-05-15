@@ -1,4 +1,10 @@
 import { CodeBlock } from '@/components/Docs/CodeBlock'
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Customization',
+  description: 'Customize and extend ospinajuanp-reset-css with CSS custom properties. Override colors, fonts, and spacing for your needs.',
+}
 
 export default function CustomizationPage() {
   return (

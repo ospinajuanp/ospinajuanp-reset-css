@@ -1,5 +1,11 @@
 import { CodeBlock } from '@/components/Docs/CodeBlock'
 import { ApiTable } from '@/components/Docs/ApiTable'
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'React API',
+  description: 'React API reference for ospinajuanp-reset-css. useResetTheme hook, useTheme hook, and ThemeProvider component.',
+}
 
 export default function ReactApiPage() {
   return (

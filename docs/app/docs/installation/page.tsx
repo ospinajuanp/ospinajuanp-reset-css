@@ -1,4 +1,10 @@
 import { CodeBlock } from '@/components/Docs/CodeBlock'
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Installation',
+  description: 'Install ospinajuanp-reset-css via npm, yarn, or pnpm. Step-by-step guide for React, Next.js, Vue, and vanilla JS projects.',
+}
 
 export default function InstallationPage() {
   return (

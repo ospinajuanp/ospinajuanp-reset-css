@@ -1,5 +1,11 @@
 import { CodeBlock } from '@/components/Docs/CodeBlock'
 import { ApiTable } from '@/components/Docs/ApiTable'
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Documentation - Introduction',
+  description: 'Learn what ospinajuanp-reset-css is and how it provides a modern CSS reset with 6 built-in themes for web projects.',
+}
 
 export default function DocsPage() {
   return (

@@ -1,5 +1,11 @@
 import { CodeBlock } from '@/components/Docs/CodeBlock'
 import { ApiTable } from '@/components/Docs/ApiTable'
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Themes API',
+  description: 'Themes API for tree-shaking and dynamic imports. Load only the theme you need with loadTheme function.',
+}
 
 export default function ThemesApiPage() {
   return (

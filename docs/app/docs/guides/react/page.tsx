@@ -1,4 +1,10 @@
 import { CodeBlock } from '@/components/Docs/CodeBlock'
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'React Integration',
+  description: 'Learn how to use ospinajuanp-reset-css with React and Next.js. Includes useResetTheme hook and ThemeProvider for dynamic theming.',
+}
 
 export default function ReactGuidePage() {
   return (

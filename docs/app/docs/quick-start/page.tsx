@@ -1,4 +1,10 @@
 import { CodeBlock } from '@/components/Docs/CodeBlock'
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Quick Start',
+  description: 'Get started with ospinajuanp-reset-css in minutes. Learn how to import themes and start using the CSS reset in your project.',
+}
 
 export default function QuickStartPage() {
   return (

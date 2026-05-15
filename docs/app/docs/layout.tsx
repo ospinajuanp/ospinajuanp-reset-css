@@ -1,5 +1,15 @@
 import { Header } from '@/components/Landing/Header'
 import { Sidebar } from '@/components/Docs/Sidebar'
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Documentation',
+  description: 'Complete documentation for ospinajuanp-reset-css. Learn how to install, configure, and use the CSS reset library with React, Vue, Next.js or vanilla JavaScript.',
+  robots: {
+    index: true,
+    follow: true
+  }
+}
 
 export default function DocsLayout({
   children,

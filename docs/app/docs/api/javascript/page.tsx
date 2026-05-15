@@ -1,5 +1,11 @@
 import { CodeBlock } from '@/components/Docs/CodeBlock'
 import { ApiTable } from '@/components/Docs/ApiTable'
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'JavaScript API',
+  description: 'JavaScript API reference for ospinajuanp-reset-css. Learn about setTheme, getTheme, themes, initTheme, and loadTheme functions.',
+}
 
 export default function JavaScriptApiPage() {
   return (

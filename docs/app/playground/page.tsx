@@ -6,15 +6,6 @@ import { themes, themeLabels, type ThemeName } from '@/lib/docs'
 import { Copy, Check } from 'lucide-react'
 import { cn } from '@/lib/utils'
 
-const themePreviews: Record<ThemeName, { bg: string; text: string; border: string; accent: string }> = {
-  simple: { bg: '#ffffff', text: '#212529', border: '#dee2e6', accent: '#007bff' },
-  dark: { bg: '#212529', text: '#e9ecef', border: '#343a40', accent: '#6c757d' },
-  pastel: { bg: '#fff5f5', text: '#5a3d3d', border: '#ffd5d5', accent: '#ff8787' },
-  darkBluePastel: { bg: '#1a1a2e', text: '#e0e0e0', border: '#2d2d44', accent: '#7b8cde' },
-  lightBluePastel: { bg: '#f0f4f8', text: '#2c3e50', border: '#d0dbe5', accent: '#5d9cec' },
-  retro: { bg: '#f4e4bc', text: '#5c4a1f', border: '#d4c4a0', accent: '#c85a17' },
-}
-
 function CodeBlock({ code }: { code: string }) {
   const [copied, setCopied] = useState(false)
 
@@ -48,6 +39,15 @@ function CodeBlock({ code }: { code: string }) {
 export default function PlaygroundPage() {
   const [selectedTheme, setSelectedTheme] = useState<ThemeName>('dark')
   const [activeTab, setActiveTab] = useState<'css' | 'js' | 'react'>('js')
+
+  const themePreviews: Record<ThemeName, { bg: string; text: string; border: string; accent: string }> = {
+    simple: { bg: '#ffffff', text: '#212529', border: '#dee2e6', accent: '#007bff' },
+    dark: { bg: '#212529', text: '#e9ecef', border: '#343a40', accent: '#6c757d' },
+    pastel: { bg: '#fff5f5', text: '#5a3d3d', border: '#ffd5d5', accent: '#ff8787' },
+    darkBluePastel: { bg: '#1a1a2e', text: '#e0e0e0', border: '#2d2d44', accent: '#7b8cde' },
+    lightBluePastel: { bg: '#f0f4f8', text: '#2c3e50', border: '#d0dbe5', accent: '#5d9cec' },
+    retro: { bg: '#f4e4bc', text: '#5c4a1f', border: '#d4c4a0', accent: '#c85a17' },
+  }
 
   const preview = themePreviews[selectedTheme]
 
