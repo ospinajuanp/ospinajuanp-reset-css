@@ -1,0 +1,8 @@
+{
+  "/page": "app/page.js",
+  "/docs/guides/customization/page": "app/docs/guides/customization/page.js",
+  "/docs/quick-start/page": "app/docs/quick-start/page.js",
+  "/docs/page": "app/docs/page.js",
+  "/docs/guides/react/page": "app/docs/guides/react/page.js",
+  "/docs/installation/page": "app/docs/installation/page.js"
+}
