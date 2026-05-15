@@ -1,0 +1,14 @@
+{
+  "/_not-found/page": "/_not-found",
+  "/page": "/",
+  "/playground/page": "/playground",
+  "/docs/api/react/page": "/docs/api/react",
+  "/docs/guides/customization/page": "/docs/guides/customization",
+  "/docs/api/themes/page": "/docs/api/themes",
+  "/docs/guides/dynamic-theming/page": "/docs/guides/dynamic-theming",
+  "/docs/guides/react/page": "/docs/guides/react",
+  "/docs/installation/page": "/docs/installation",
+  "/docs/page": "/docs",
+  "/docs/quick-start/page": "/docs/quick-start",
+  "/docs/api/javascript/page": "/docs/api/javascript"
+}

@@ -1,0 +1,113 @@
+{
+  "version": 3,
+  "pages404": true,
+  "caseSensitive": false,
+  "basePath": "",
+  "redirects": [
+    {
+      "source": "/:path+/",
+      "destination": "/:path+",
+      "internal": true,
+      "statusCode": 308,
+      "regex": "^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))/$"
+    }
+  ],
+  "headers": [],
+  "rewrites": {
+    "beforeFiles": [],
+    "afterFiles": [],
+    "fallback": []
+  },
+  "dynamicRoutes": [],
+  "staticRoutes": [
+    {
+      "page": "/",
+      "regex": "^/(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/(?:/)?$"
+    },
+    {
+      "page": "/_not-found",
+      "regex": "^/_not\\-found(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_not\\-found(?:/)?$"
+    },
+    {
+      "page": "/docs",
+      "regex": "^/docs(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/docs(?:/)?$"
+    },
+    {
+      "page": "/docs/api/javascript",
+      "regex": "^/docs/api/javascript(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/docs/api/javascript(?:/)?$"
+    },
+    {
+      "page": "/docs/api/react",
+      "regex": "^/docs/api/react(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/docs/api/react(?:/)?$"
+    },
+    {
+      "page": "/docs/api/themes",
+      "regex": "^/docs/api/themes(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/docs/api/themes(?:/)?$"
+    },
+    {
+      "page": "/docs/guides/customization",
+      "regex": "^/docs/guides/customization(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/docs/guides/customization(?:/)?$"
+    },
+    {
+      "page": "/docs/guides/dynamic-theming",
+      "regex": "^/docs/guides/dynamic\\-theming(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/docs/guides/dynamic\\-theming(?:/)?$"
+    },
+    {
+      "page": "/docs/guides/react",
+      "regex": "^/docs/guides/react(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/docs/guides/react(?:/)?$"
+    },
+    {
+      "page": "/docs/installation",
+      "regex": "^/docs/installation(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/docs/installation(?:/)?$"
+    },
+    {
+      "page": "/docs/quick-start",
+      "regex": "^/docs/quick\\-start(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/docs/quick\\-start(?:/)?$"
+    },
+    {
+      "page": "/playground",
+      "regex": "^/playground(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/playground(?:/)?$"
+    }
+  ],
+  "dataRoutes": [],
+  "rsc": {
+    "header": "rsc",
+    "varyHeader": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+    "prefetchHeader": "next-router-prefetch",
+    "didPostponeHeader": "x-nextjs-postponed",
+    "contentTypeHeader": "text/x-component",
+    "suffix": ".rsc",
+    "prefetchSuffix": ".prefetch.rsc",
+    "prefetchSegmentHeader": "next-router-segment-prefetch",
+    "prefetchSegmentSuffix": ".segment.rsc",
+    "prefetchSegmentDirSuffix": ".segments"
+  },
+  "rewriteHeaders": {
+    "pathHeader": "x-nextjs-rewritten-path",
+    "queryHeader": "x-nextjs-rewritten-query"
+  }
+}
